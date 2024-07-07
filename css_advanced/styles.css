@@ -1,7 +1,11 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 *{
     box-sizing: border-box;
     margin: 0px;
-    font-family:Source Sans Pro ;
+   font-family: 'Open Sans', sans-serif;
+
 }
 
 .banner-wrap{
@@ -78,7 +82,7 @@ h2{
 }
 .Slogan > h2{
     display: flex;
-    margin-bottom: 5px;
+    padding-top: 50px;
     align-items: center;
     justify-content: center;
 }
@@ -86,13 +90,13 @@ h2{
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
-    margin-top: 50px;
+    margin-top: 10px;
     gap: 80px;
     color: white;
     
 }
 .Smile-Pro{
-    width: 100px;
+    width: 110px;
     border-radius: 50%;
     margin-top: 30px;
     margin-bottom: 10px;
@@ -107,7 +111,7 @@ h2{
 }
 .Smile-Pro p {
 
-    font-size: 0.9rem;
+    font-size: 0.6rem;
     color: white;
 }
 .Smile-Pro h3 {
@@ -293,3 +297,89 @@ h2{
 .btn-register:hover {
     background-color: #9333ea;
 }
+.faq {
+    max-width: 800px; 
+    margin: 0 auto;
+    padding: 20px; 
+    border: 1px solid white; 
+    border-radius: 8px; 
+    background-color: white;
+    box-shadow: 0 2px 5px transparent;
+    display: grid; 
+    grid-template-columns: 1fr 1fr;
+    gap: 20px; 
+}
+
+.faq h2 {
+    font-size: 2rem; 
+    font-weight: bold; 
+    color: black; 
+    margin-bottom: 20px; 
+    padding: 10px; 
+    text-align: center;
+    grid-column: span 2; 
+}
+
+.faq-item {
+    background: #fff; 
+    padding: 15px; 
+    
+}
+
+.faq h3 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: black;
+    margin-bottom: 10px;
+}
+
+.faq p {
+    font-size: 1rem; 
+    color: black;
+    line-height: 1.6;
+    margin-bottom: 15px; 
+    padding: 0; 
+    text-align: left;
+}
+#myFooter {
+    background-color: #071629;
+    height: 100;
+    padding: 20px 15px; 
+    opacity: 1; 
+    background-image: none;
+    color: #ffffff; 
+    text-align: center; 
+}
+    
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 50px;
+    background-color: #071629;
+}
+.footer-right i {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    font-size: 1.5em;
+    gap: 5px;
+}
+    
+
+
+.footer-right a:last-child {
+        margin-right: 0;
+    }
+    
+    .footer-left img {
+        height: 30px;
+        padding-top: 5px;
+    }
+    
+    footer p {
+        text-align: center;
+        font-size: smaller;
+        margin: 20px 0 0 0;
+        color:grey;
+    }
