@@ -1,0 +1,111 @@
+ @keyframes fadeInAnimation { 
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+} 
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(1);
+        opacity: 0.8;
+    }
+    100% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+}
+
+
+header, section {
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
+}
+
+
+.result-section {
+    color: white;
+    padding: 60px 20px;
+    text-align: center;
+    background: url(C:/Users/dlalisad/Downloads/d1597894d79386c83b9b/images/headphones_hero_2.jpg) no-repeat center center / cover;
+    background-position: top center;
+    animation: fadeInAnimation ease 2s;
+    animation-fill-mode: forwards;
+}
+
+.card-component {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.card-small {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    width: calc(25% - 20px);
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    opacity: 0;
+}
+
+.card-small:hover {
+    transform: translateY(-10px);
+    opacity: 1;
+}
+
+.pentagon-wrap {
+    background-color: #FF6565;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+    color: white;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: scaleUp 0.5s ease forwards, rotate 5s linear infinite;
+    opacity: 0;
+}
+
+.pentagon-wrap:hover {
+    transform: scale(1.1);
+    opacity: 0.8;
+}
+
+
+@media (max-width: 768px) {
+    .card-component {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pentagon-wrap {
+        width: 100px;
+        height: 100px;
+    }
+}
+
+@media (max-width: 480px) {
+    .card-component {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pentagon-wrap {
+        width: 80px;
+        height: 80px;
+    }
+}
